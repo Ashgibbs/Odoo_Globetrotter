@@ -2,62 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>GlobeTrotter | Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>GlobalTrotter – Home</title>
+  <link rel="stylesheet" href="dashboard.css" />
 </head>
+<body>
 
-<body class="dashboard-page">
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="logo">🌍 GlobalTrotter</div>
 
-  <!-- TOP HEADER -->
-  <header class="top-bar">
-    <div class="top-left">GlobeTrotter</div>
-    <div class="profile-circle"></div>
+    <input type="text" placeholder="Search trips, cities, activities..." />
+
+    <div class="actions">
+      <button>Group</button>
+      <button>Filter</button>
+      <button>Sort</button>
+    </div>
   </header>
 
-  <!-- MAIN CONTAINER -->
-  <main class="dashboard">
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Plan smarter. Travel deeper.</h1>
+      <p>Your personalized travel dashboard</p>
+    </div>
+  </section>
 
-    <!-- BANNER -->
-    <section class="banner">
-      Banner Image
-    </section>
+  <!-- Top Regional Selections -->
+  <section class="section">
+    <h2>Top Regional Selections</h2>
 
-    <!-- SEARCH + FILTER ROW -->
-    <section class="search-row">
-      <input type="text" placeholder="Search bar ...." />
-
-      <button>Group by</button>
-      <button>Filter</button>
-      <button>Sort by</button>
-    </section>
-
-    <!-- TOP REGIONAL SELECTIONS -->
-    <section class="section">
-      <h3>Top Regional Selections</h3>
-
-      <div class="horizontal-cards">
-        <div class="small-card"></div>
-        <div class="small-card"></div>
-        <div class="small-card"></div>
-        <div class="small-card"></div>
-        <div class="small-card"></div>
+    <div class="region-grid">
+      <div class="region-card">
+        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <span>Paris</span>
       </div>
-    </section>
+      <div class="region-card">
+        <img src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG9reW98ZW58MHx8MHx8fDA%3D" />
+        <span>Tokyo</span>
+      </div>
+      <div class="region-card">
+        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9tZXxlbnwwfHwwfHx8MA%3D%3D" />
+        <span>Rome</span>
+      </div>
+      <div class="region-card">
+        <img src="https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D" />
+        <span>Bali</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- PREVIOUS TRIPS -->
-    <section class="section">
-      <h3>Previous Trips</h3>
+  <!-- Previous Trips -->
+  <section class="section">
+    <h2>Previous Trips</h2>
 
-      <div class="trip-row">
-        <div class="large-card"></div>
-        <div class="large-card"></div>
-        <div class="large-card"></div>
+    <div class="trip-grid">
+      <div class="trip-card">
+        <img src="https://images.unsplash.com/photo-1619837374214-f5b9eb80876d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFkYWtofGVufDB8fDB8fHww" />
+        <div class="trip-info">
+          <h3>Ladakh</h3>
+          <p>Mar 2024 • ₹32,000</p>
+        </div>
       </div>
 
-      <button class="plan-btn">+ Plan a trip</button>
-    </section>
+      <div class="trip-card">
+        <img src="https://plus.unsplash.com/premium_photo-1697729701846-e34563b06d47?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z29hfGVufDB8fDB8fHww" />
+        <div class="trip-info">
+          <h3>Goa</h3>
+          <p>Jan 2024 • ₹18,500</p>
+        </div>
+      </div>
 
-  </main>
+      <div class="trip-card">
+        <img src="https://images.unsplash.com/photo-1603766806347-54cdf3745953?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhhbmphdnVyfGVufDB8fDB8fHww" />
+        <div class="trip-info">
+          <h3>South Temple Tour</h3>
+          <p>Dec 2023 • ₹24,000</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="cta">+ Plan a Trip</button>
+  </section>
 
 </body>
 </html>
