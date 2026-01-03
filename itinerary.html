@@ -37,10 +37,42 @@
 
   <!-- 🔹 Save button -->
   <button class="primary-btn" onclick="saveItinerary()">Save Itinerary</button>
+  <button class="secondary-btn" onclick="goToCitySearch()">
+  + Add City
+</button>
+<button onclick="goToActivitySearch('STOP_ID')">
+  + Add Activity
+</button>
+
+
 
 </section>
 
-<script type="module" src="/itenerary.js"></script>
+<script type="module" src="itenerary.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const tripId = params.get("tripId");
+
+  function goToCitySearch() {
+    if (!tripId) {
+      alert("Trip ID missing");
+      return;
+    }
+    window.location.href = `city-search.html?tripId=${tripId}`;
+  }
+
+  function goToActivitySearch(stopId) {
+    if (!tripId || !stopId) {
+      alert("Trip or Stop ID missing");
+      return;
+    }
+    window.location.href =
+      `activity-search.html?tripId=${tripId}&stopId=${stopId}`;
+  }
+</script>
+
+
+
 
 </body>
 </html>

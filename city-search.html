@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>City Search</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="city-search.css" />
+</head>
+
+<body class="city-search-page">
+
+<section class="card full">
+
+  <!-- Header -->
+  <header class="card-header">
+    <span class="back-arrow" onclick="goBack()">←</span>
+    <h2>🌍 GlobalTrotter</h2>
+  </header>
+
+  <!-- Search + Filters -->
+  <div class="search-row">
+    <input id="searchInput" type="text" placeholder="Search city..." />
+    <button onclick="loadCities()">Search</button>
+  </div>
+
+  <!-- Results -->
+  <div id="results" class="results"></div>
+
+</section>
+
+<script type="module" src="city-search.js"></script>
+</body>
+</html>

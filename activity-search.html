@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Activity Search</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="activity-search.css" />
+</head>
+
+<body class="activity-search-page">
+
+<section class="card full">
+
+  <!-- Header -->
+  <header class="card-header">
+    <span class="back-arrow" onclick="goBack()">←</span>
+    <h2>🌍 GlobalTrotter</h2>
+  </header>
+
+  <!-- Search + Filters -->
+  <div class="search-row">
+    <input id="searchInput" type="text" placeholder="Search activity..." />
+    <select id="typeFilter">
+      <option value="">All Types</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Food">Food</option>
+      <option value="Culture">Culture</option>
+      <option value="Sightseeing">Sightseeing</option>
+    </select>
+    <button onclick="loadActivities()">Search</button>
+  </div>
+
+  <!-- Results -->
+  <div id="results" class="results"></div>
+
+</section>
+
+<script type="module" src="activity-search.js"></script>
+</body>
+</html>
