@@ -1,0 +1,69 @@
+.controls {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.controls input {
+  flex: 1;
+  padding: 0.6rem;
+  background: #1f1f2e;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.day-section {
+  border: 1px solid #2a2a3a;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.day-header {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed #2a2a3a;
+}
+
+.activity-row:last-child {
+  border-bottom: none;
+}
+
+.budget-summary {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6a5cff, #9b8cff);
+  text-align: center;
+}
+
+.budget-summary p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.back-arrow {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.profile-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #2a2a3a;
+  cursor: pointer;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
