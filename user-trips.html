@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Trips</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="user-trips.css" />
+</head>
+
+<body class="user-trips-page">
+
+<section class="card full">
+
+  <!-- Header -->
+  <header class="card-header">
+    <span class="back-arrow" onclick="goBack()">←</span>
+    <h2>🌍 GlobalTrotter</h2>
+  </header>
+
+  <!-- Search & Filters -->
+  <div class="search-row">
+    <input type="text" id="searchInput" placeholder="Search trips..." />
+    <button>Group by</button>
+    <button>Filter</button>
+    <button>Sort by</button>
+  </div>
+
+  <!-- Ongoing Trips -->
+  <h3>Ongoing</h3>
+  <div id="ongoing-trips" class="trip-list"></div>
+
+  <!-- Completed Trips -->
+  <h3>Completed</h3>
+  <div id="completed-trips" class="trip-list"></div>
+
+</section>
+
+<script type="module" src="user-trips.js"></script>
+</body>
+</html>

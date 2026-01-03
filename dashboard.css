@@ -154,3 +154,21 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondary-btn {
+  padding: 0.4rem 0.9rem;
+  background: #1f1f2e;
+  border: 1px solid #2a2a3a;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  border-color: #6a5cff;
+}

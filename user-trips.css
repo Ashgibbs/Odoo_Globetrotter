@@ -1,0 +1,55 @@
+.search-row {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.search-row input {
+  flex: 1;
+  padding: 0.6rem;
+  background: #1f1f2e;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.trip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.trip-card {
+  border: 1px solid #2a2a3a;
+  border-radius: 14px;
+  padding: 1rem;
+  cursor: pointer;
+  background: #14141f;
+}
+
+.trip-card:hover {
+  border-color: #6a5cff;
+}
+
+.trip-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.trip-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.back-arrow {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
