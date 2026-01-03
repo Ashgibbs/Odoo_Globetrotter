@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GlobeTrotter | Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="login-screen">
+    <div class="login-card">
+
+      <!-- Logo / Photo Frame -->
+      <div class="logo-container">
+        <img src="assets/globetrotter.jpg" alt="GlobeTrotter Logo" />
+      </div>
+
+      <!-- Username -->
+      <input
+        type="email"
+        id="email"
+        placeholder="Username / Email"
+        required
+      />
+
+      <!-- Password -->
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
+
+      <!-- Login Button -->
+      <button onclick="loginUser()">Login</button>
+
+      <!-- Error Message -->
+<p id="error-msg"></p>
+
+<!-- Signup Link -->
+<p class="signup-text">
+  Don’t have an account?
+  <a href="signup.html">Signup</a>
+</p>
+
+
+    </div>
+  </div>
+
+  <!-- Firebase + Login Logic -->
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="login.js"></script>
+
+</body>
+</html>
