@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Build Itinerary</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="itenerary.css">
+</head>
+
+<body class="itenary-page">
+
+<section class="card full">
+
+  <!-- 🔹 Header with Back Arrow -->
+  <header class="card-header">
+    <span class="back-arrow" onclick="goBack()">←</span>
+    <h2>🌍 GlobalTrotter</h2>
+  </header>
+
+  <h3>Build Itinerary</h3>
+
+  <!-- Sections container -->
+  <div id="sections-container">
+
+    <div class="itinerary-section">
+      <h4>Section 1</h4>
+      <p>Travel / Hotel / Activity</p>
+      <div class="inline">
+        <input class="date-range" placeholder="Date range">
+        <input class="budget" placeholder="Budget">
+      </div>
+    </div>
+
+  </div>
+
+  <button class="add-btn">＋ Add another section</button>
+
+  <!-- 🔹 Save button -->
+  <button class="primary-btn" onclick="saveItinerary()">Save Itinerary</button>
+
+</section>
+
+<script type="module" src="/itenerary.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.back-arrow {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
