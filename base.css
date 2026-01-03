@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, system-ui, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #0e0e15;
+    color: #ffffff;
+  }
+  
+  /* Topbar */
+  .topbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: #14141f;
+  }
+  
+  .logo img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .topbar input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    background: #1f1f2e;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .actions button {
+    background: #1f1f2e;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Sections */
+  .section {
+    margin: 1.5rem;
+  }
+  
+  /* Buttons */
+  .primary-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    background: linear-gradient(135deg, #6a5cff, #9b8cff);
+    border: none;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,46 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+  
+  .img-card {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .img-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .img-card span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    padding: 0.4rem;
+    text-align: center;
+  }
+  
+  .img-card.selected {
+    outline: 3px solid #6a5cff;
+    transform: scale(1.04);
+  }
+  .back-arrow {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+  
