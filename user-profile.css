@@ -1,0 +1,48 @@
+.profile-info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #2a2a3a;
+}
+
+.user-details h3 {
+  margin: 0;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.trip-card {
+  border: 1px solid #2a2a3a;
+  border-radius: 14px;
+  padding: 1rem;
+  background: #14141f;
+}
+
+.trip-card button {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.back-arrow {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

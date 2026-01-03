@@ -172,3 +172,11 @@ body {
 .secondary-btn:hover {
   border-color: #6a5cff;
 }
+.profile-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #2a2a3a;
+  cursor: pointer;
+  margin-left: 1rem;
+}

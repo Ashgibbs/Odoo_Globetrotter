@@ -9,16 +9,20 @@
 
   <!-- Top Bar -->
   <header class="topbar">
-    <div class="logo">🌍 GlobalTrotter</div>
+  <div class="logo">🌍 GlobalTrotter</div>
 
-    <input type="text" placeholder="Search trips, cities, activities..." />
+  <input type="text" placeholder="Search trips, cities, activities..." />
 
-    <div class="actions">
-      <button>Group</button>
-      <button>Filter</button>
-      <button>Sort</button>
-    </div>
-  </header>
+  <div class="actions">
+    <button>Group</button>
+    <button>Filter</button>
+    <button>Sort</button>
+  </div>
+
+  <!-- Profile Icon -->
+  <div class="profile-circle" onclick="goToProfile()"></div>
+</header>
+
 
   <!-- Banner -->
   <section class="banner">
@@ -94,6 +98,12 @@
     window.location.href = "user-trips.html";
   }
 </script>
+<script>
+  function goToProfile() {
+    window.location.href = "user-profile.html";
+  }
+</script>
+
 
 
 

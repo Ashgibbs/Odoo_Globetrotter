@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="user-profile.css" />
+</head>
+
+<body class="user-profile-page">
+
+<section class="card full">
+
+  <!-- Header -->
+  <header class="card-header">
+    <span class="back-arrow" onclick="goBack()">←</span>
+    <h2>🌍 GlobalTrotter</h2>
+  </header>
+
+  <!-- User Info -->
+  <div class="profile-info">
+    <div class="avatar"></div>
+
+    <div class="user-details">
+      <h3 id="userName">User Name</h3>
+      <p id="userEmail">user@email.com</p>
+      <button class="secondary-btn">Edit Profile</button>
+    </div>
+  </div>
+
+  <!-- Preplanned Trips -->
+  <h3>Preplanned Trips</h3>
+  <div id="planned-trips" class="trip-grid"></div>
+
+  <!-- Previous Trips -->
+  <h3>Previous Trips</h3>
+  <div id="completed-trips" class="trip-grid"></div>
+
+</section>
+
+<script type="module" src="user-profile.js"></script>
+</body>
+</html>
